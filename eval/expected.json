@@ -1,0 +1,9 @@
+{
+  "cases": [
+    {
+      "name": "signed-ledger-total",
+      "input": "cases/ledger.csv",
+      "expected_stdout": "Total: 85.15\n"
+    }
+  ]
+}

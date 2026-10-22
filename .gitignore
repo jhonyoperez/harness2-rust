@@ -1,0 +1,31 @@
+# Generated Rust build output and compiler artifacts.
+/target/
+
+# macOS metadata; never source.
+.DS_Store
+
+# Runtime checkpoint directories and lock/data files. These contain accepted and
+# candidate source plus partial process output, so they are never publishable.
+# Keep intentional eval fixtures under eval/ unignored.
+.harness2/
+checkpoints/
+.checkpoints/
+*.checkpoint.json
+checkpoint.json
+checkpoint.lock
+*.checkpoint.lock
+
+# Local credentials and private keys. Keep .env.example as a publishable template.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+
+# Local runtime logs; diagnostics may contain harness content or process output.
+*.log
+logs/
